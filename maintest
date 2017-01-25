@@ -1,21 +1,21 @@
 var clicks = 0;
 
 	//xxinfo
-	
-var cps = 0
-function cpsCalc(number) {
-    cps = ((cursors * cursorIncrement) + (superCursors * superCursorIncrement * 10)) ;
-	document.getElementById("cps").innerHTML = cps;
+var cps = 0 {
+	function cpsCalc() {
+		cps = ((cursors * cursorIncrement) + (superCursors * superCursorIncrement))
+		document.getElementById("cps").innerHTML = cps;
 };
 	
+
+
+
 
 
 function objectClick(number) {
 	clicks = clicks + number ;
 	document.getElementById("clicks").innerHTML = clicks;
 };
-
-
 	//xxclickvalue
 	
 	
@@ -95,8 +95,5 @@ var superCursorIncrement = 1;
 		
 		objectClick(cursors * cursorIncrement);
 		objectClick(superCursors * superCursorIncrement * 10);
-		cpsCalc(cps);
+		
 	}, 1000);
-	
-
-	

@@ -7,9 +7,17 @@
 	</head>
 	
 	<body>
-		<button onclick="objectClick(1)" class="click">Click Me!</button>
+	
+	
+	
+		<button onclick="objectClick(clickValue)" class="click">Click Me!</button>
 		
 	    <span class="clicks">Clicks:<span id="clicks" >0</span><br></span>
+		<span class="clicks">CPS:<span id="cps" >0</span><br></span>
+		
+
+		
+		<!--xxcursor-->
 		
 		<button onclick="buyCursor()" class="building">
 			Buy Cursor 
@@ -19,9 +27,11 @@
 			Cost:<span id="cursorCost">10</span>
 		</button>
 		
-		<button onclick="buySuperCursor1()" class="building">
-			Buy Upgrade 1
+		<button onclick="buyCursor1()" class="building">
+			Cursor Power x2
 		</button>
+		
+		<!--xxsupercursor-->
 		
 		<br />
 		
@@ -33,6 +43,13 @@
 			Cost:<span id="superCursorCost">100</span>
 		</button>
 		
+		<button onclick="buySuperCursor1()" class="building">
+			Super Cursor Power x2
+		</button>
+		
+		<button onclick="buyClick1()" class="building">
+			Click Power x2
+		</button>
 	
 	
 	

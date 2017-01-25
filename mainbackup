@@ -1,13 +1,6 @@
 var clicks = 0;
 
 	//xxinfo
-	
-var cps = 0
-function cpsCalc(number) {
-    cps = ((cursors * cursorIncrement) + (superCursors * superCursorIncrement * 10)) ;
-	document.getElementById("cps").innerHTML = cps;
-};
-	
 
 
 function objectClick(number) {
@@ -95,7 +88,7 @@ var superCursorIncrement = 1;
 		
 		objectClick(cursors * cursorIncrement);
 		objectClick(superCursors * superCursorIncrement * 10);
-		cpsCalc(cps);
+		
 	}, 1000);
 	
 
