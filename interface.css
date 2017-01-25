@@ -1,0 +1,47 @@
+body {
+	background: teal;
+}
+
+.building {
+	margin-left: 0%;
+	margin-top: 10px;
+	width: 200px;
+	background-color: 00796b;
+	border-radius: 25px;
+	border-color: silver;
+	border-width: 5px;
+
+}
+
+.click {
+	padding: 20px 40px;
+	display:block;
+	margin:0 auto;
+	font-size: 24px;
+	background-color: 00796b;
+	border-radius: 25px;
+	border-color: silver;
+	border-width: 5px;
+	
+}
+
+.clicks {
+	margin:0 auto;
+	text-align: center;
+	display: block;
+	font-size: 24px
+}
+
+.upgrades {
+	margin-left: 90%;
+	margin-top: 10px;
+	width: 200px;
+	background-color: 00796b;
+	border-radius: 25px;
+	border-color: silver;
+	border-width: 5px;
+
+
+
+		
+
