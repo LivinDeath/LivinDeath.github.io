@@ -20,13 +20,17 @@ function objectClick(number) {
 	
 	
 var clickValue = 1
-	function buyClick1() {
-		var click1Cost = 100;
-		if(clicks >= click1Cost) {
+var clickUpgrades = 0
+	function buyClick() {
+		var clickCost = Math.floor(100 * Math.pow(3,clickUpgrades));
+		if(clicks >= clickCost) {
 			clickValue = clickValue * 2;
-			clicks = clicks - 100;
+			clicks = clicks - clickCost;
+			clickUpgrades = clickUpgrades + 1;
 			document.getElementById("clicks").innerHTML = clicks;
 		};
+		var nextClickCost = Math.floor(100 * Math.pow(3,clickUpgrades));
+		document.getElementById("clickCost").innerHTML = nextClickCost;
 	};
 	
 
@@ -45,16 +49,16 @@ var cursors = 0;
 			document.getElementById("cursors").innerHTML = cursors;
 			document.getElementById("clicks").innerHTML = clicks;
 		};
-		var nextCost = Math.floor(10 * Math.pow(1.1,cursors));
-		document.getElementById("cursorCost").innerHTML = nextCost;
+		var nextCursorCost = Math.floor(10 * Math.pow(1.1,cursors));
+		document.getElementById("cursorCost").innerHTML = nextCursorCost;
 	};
 	
 	
 	
 var cursorIncrement = 1;
-	function buyCursor1() {
-		var cursor1Cost = 100;
-		if(clicks>= cursor1Cost) {
+	function buyCursorUpgrade() {
+		var cursorUpgradeCost = 100;
+		if(clicks>= cursorUpgradeCost) {
 			cursorIncrement = cursorIncrement * 2;
 			clicks = clicks - 100;
 			document.getElementById("clicks").innerHTML = clicks;
